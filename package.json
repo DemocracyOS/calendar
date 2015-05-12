@@ -19,7 +19,7 @@
     "map-component": "0.0.1",
     "type-component": "0.0.1",
     "component-empty": "0.0.1",
-    "normalize": "git://github.com/slisfzyc/normalize"
+    "normalize": "git://github.com/slifszyc/normalize"
   },
   "browser": {
     "event": "event-component",
