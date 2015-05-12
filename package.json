@@ -12,14 +12,24 @@
     "emitter-component": "1.0.1",
     "classes-component": "1.1.3",
     "range-component": "1.0.0",
-    "in-groups-of": "component/in-groups-of#1.0.0",
-    "event-component": "~0.1.0"
+    "in-groups-of": "git+https://github.com/component/in-groups-of#1.0.0",
+    "event-component": "~0.1.0",
+    "bounds": "1.0.0",
+    "component-bind": "1.0.0",
+    "map-component": "0.0.1",
+    "type-component": "0.0.1",
+    "component-empty": "0.0.1",
+    "normalize": "git://github.com/slisfzyc/normalize"
   },
   "browser": {
     "event": "event-component",
     "emitter": "emitter-component",
     "classes": "classes-component",
-    "range": "range-component"
+    "range": "range-component",
+    "bind": "component-bind",
+    "map": "map-component",
+    "type": "type-component",
+    "empty": "component-empty"
   },
   "component": {
     "styles": [
@@ -39,7 +49,18 @@
   },
   "devDependencies": {
     "mocha": "~1",
-    "bounds": "~1.0.0",
-    "type-component": "0.0.1"
-  }
+    "bounds": "~1.0.0"
+  },
+  "gitHead": "cb53dc2ef1345fa6bf463d13dcf58f407221e521",
+  "readme": "\n# Calendar\n\n  Calendar UI component designed for use as a date-picker,\n  full-sized calendar or anything in-between.\n\n  ![javascript calendar component](http://f.cl.ly/items/2u3w1D421W0C370Z3G1U/Screen%20Shot%202012-10-11%20at%2014.32.41.png)\n\n  Live demo is [here](http://component.github.io/calendar/)\n\n## Installation\n\n    $ component install component/calendar\n\n## Example\n\n```js\nvar Calendar = require('calendar');\nvar cal = new Calendar;\ncal.el.appendTo('body');\n```\n\n## Events\n\n  - `view change` (date, action) when the viewed month/year is changed without modification of the selected date. This can be done either by next/prev buttons or dropdown menu. The action will be \"prev\", \"next\", \"month\" or \"year\" depending on what action caused the view to change.\n  - `change` (date) when the selected date is modified\n\n## API\n\n### new Calendar(date)\n\n  Initialize a new `Calendar` with the given `date` shown,\n  defaulting to now.\n\n### Calendar#select(date)\n\n  Select the given `date` (`Date` object).\n\n### Calendar#show(date)\n\n  Show the given `date`. This does _not_ select the given date,\n  it simply ensures that it is visible in the current view.\n\n### Calendar#showMonthSelect()\n\n  Add month selection input.\n\n### Calendar#showYearSelect([from], [to])\n\n  Add year selection input, with optional range specified by `from` and `to`,\n  which default to the current year -10 / +10.\n\n### Calendar#prev()\n\n  Show the previous view (month).\n\n### Calendar#next()\n\n  Show the next view (month).\n\n### Calendar#min()\n\n  Define earliest valid date - calendar won't generate `change` events for dates before this one.\n\n### Calendar#max()\n\n  Define latest valid date - calendar won't generate `change` events for dates after this one.\n\n## Themes\n\n  [Aurora](https://github.com/component/aurora-calendar):\n\n  ![](https://a248.e.akamai.net/camo.github.com/2ca4c0ffd16267155335b2d9285c1923fa90e6d3/687474703a2f2f662e636c2e6c792f6974656d732f3034334e31723065314c313330793136325232662f53637265656e25323053686f74253230323031322d30392d31372532306174253230392e31372e3332253230504d2e706e67)\n\n# License\n\n  MIT\n\n",
+  "readmeFilename": "Readme.md",
+  "bugs": {
+    "url": "https://github.com/component/calendar/issues"
+  },
+  "homepage": "https://github.com/component/calendar",
+  "_id": "calendar-component@0.1.0",
+  "_shasum": "b8dc9a52d82157cc65ba860dee18688748a7ba39",
+  "_from": "git://github.com/slifszyc/calendar.git#0.1.0",
+  "_resolved": "git://github.com/slifszyc/calendar.git#cb53dc2ef1345fa6bf463d13dcf58f407221e521",
+  "_fromGithub": true
 }
