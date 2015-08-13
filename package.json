@@ -1,7 +1,7 @@
 {
   "name": "democracyos-calendar",
   "description": "Calendar component",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "keywords": [
     "calendar",
     "date",
@@ -14,7 +14,7 @@
     "range-component": "1.0.0",
     "in-groups-of": "git+https://github.com/component/in-groups-of#1.0.0",
     "event-component": "~0.1.0",
-    "democracyos-bounds": "^0.2.0",
+    "democracyos-bounds": "^1.0.0",
     "component-bind": "1.0.0",
     "map-component": "0.0.1",
     "type-component": "0.0.1",
