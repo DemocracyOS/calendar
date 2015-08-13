@@ -1,5 +1,5 @@
 {
-  "name": "calendar-component",
+  "name": "democracyos-calendar",
   "description": "Calendar component",
   "version": "0.2.0",
   "keywords": [
@@ -14,12 +14,12 @@
     "range-component": "1.0.0",
     "in-groups-of": "git+https://github.com/component/in-groups-of#1.0.0",
     "event-component": "~0.1.0",
-    "bounds": "git://github.com/slifszyc/bounds",
+    "democracyos-bounds": "^0.2.0",
     "component-bind": "1.0.0",
     "map-component": "0.0.1",
     "type-component": "0.0.1",
     "component-empty": "0.0.1",
-    "normalize": "git://github.com/slifszyc/normalize"
+    "democracyos-normalize": "^0.0.1"
   },
   "browser": {
     "event": "event-component",
